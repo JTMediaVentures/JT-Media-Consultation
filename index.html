@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Consulting Business</title>
+  <link rel="stylesheet" href="style/style.css" />
+</head>
+<body>
+  <!-- NAV -->
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="#top" aria-label="Go to top">
+        <span class="brand-mark">◆</span>
+        <span class="brand-name">YourConsulting</span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#services">Services</a>
+        <a href="#process">Process</a>
+        <a href="#results">Results</a>
+        <a href="#about">About</a>
+        <a class="btn btn-sm" href="#contact">Book a Call</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <main id="top">
+    <section class="hero">
+      <div class="hero-bg" aria-hidden="true"></div>
+
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Consulting for teams that want clarity + momentum</p>
+          <h1>Turn messy problems into an action plan your team can execute.</h1>
+          <p class="subhead">
+            Strategy, operations, and systems consulting that cuts through noise and delivers measurable progress
+            in weeks — not months.
+          </p>
+
+          <div class="cta-row">
+            <a class="btn btn-primary" href="#contact">Book a Free Consultation</a>
+            <a class="btn btn-ghost" href="#services">See Services</a>
+          </div>
+
+          <div class="trust-row">
+            <div class="trust-item">
+              <span class="trust-number">48hr</span>
+              <span class="trust-label">first recommendations</span>
+            </div>
+            <div class="trust-item">
+              <span class="trust-number">90%</span>
+              <span class="trust-label">clients renew</span>
+            </div>
+            <div class="trust-item">
+              <span class="trust-number">1–2w</span>
+              <span class="trust-label">to see traction</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <div class="card">
+            <h2>Get a plan in one call</h2>
+            <p class="muted">
+              Tell me what’s stuck. I’ll map your next best steps, fast.
+            </p>
+
+            <ul class="bullets">
+              <li>Clear priorities (what to do first)</li>
+              <li>Simple 30–60 day roadmap</li>
+              <li>Risk + cost blind spots spotted early</li>
+            </ul>
+
+            <a class="btn btn-primary btn-block" href="#contact">Book a Free Consultation</a>
+            <p class="tiny muted">No pressure. If we’re not a fit, you’ll still leave with clarity.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTIONS (simple, but “strong landing page” ready) -->
+    <section class="section" id="services">
+      <div class="container">
+        <h3>Services</h3>
+        <div class="cards">
+          <article class="mini-card">
+            <h4>Strategy Sprints</h4>
+            <p>Define goals, audience, positioning, and your execution roadmap.</p>
+          </article>
+          <article class="mini-card">
+            <h4>Operations Fix</h4>
+            <p>Reduce chaos with processes, owners, and simple dashboards.</p>
+          </article>
+          <article class="mini-card">
+            <h4>Systems & Automation</h4>
+            <p>Improve handoffs, reduce manual work, and speed up delivery.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="process">
+      <div class="container">
+        <h3>Process</h3>
+        <div class="steps">
+          <div class="step"><span>1</span><p><b>Diagnose</b><br/>Quick discovery + constraints.</p></div>
+          <div class="step"><span>2</span><p><b>Design</b><br/>Roadmap + priorities.</p></div>
+          <div class="step"><span>3</span><p><b>Execute</b><br/>Weekly progress + accountability.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="results">
+      <div class="container">
+        <h3>Results</h3>
+        <div class="quote">
+          <p>
+            “We finally had a clear plan. Within two weeks, we shipped improvements that had been stuck for months.”
+          </p>
+          <span class="muted">— Client, Operations Lead</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="about">
+      <div class="container about">
+        <div>
+          <h3>About</h3>
+          <p class="muted">
+            I help small teams and solo founders simplify decisions, build repeatable systems,
+            and move faster with less stress.
+          </p>
+        </div>
+        <div class="about-box">
+          <p><b>Ideal for:</b> small businesses, teams in transition, new service offers, scaling workflows.</p>
+          <p><b>Not ideal for:</b> people who want “ideas” without implementation.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container contact">
+        <h3>Book a Consultation</h3>
+        <p class="muted">Drop your info and I’ll reply with times. (You can connect this to EmailJS later.)</p>
+
+        <form class="form" id="contact-form">
+          <div class="row">
+            <input name="from_name" type="text" placeholder="Your name" required />
+            <input name="reply_to" type="email" placeholder="Your email" required />
+          </div>
+          <textarea name="message" placeholder="What do you need help with?" required></textarea>
+          <button class="btn btn-primary" type="submit">Send</button>
+          <p class="tiny muted" id="formStatus"></p>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p class="muted">© <span id="year"></span> YourConsulting. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="#services">Services</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
